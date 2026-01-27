@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav style="background-color: darkslategray; padding: 30; display: flex; align-items: center; justify-content: start; border-radius: 20px;">
+            <ul style="list-style: none; display: flex; flex-direction: row; gap: 30px;">
+                <li><a href="./index.html" style="text-decoration: none; color: aliceblue;">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 style="color: red; text-decoration: underline;">Contact Page</h1>
+            <h2>Reach out for us if you have any questions.</h2>
+        </section>
+        <section style="display: flex; flex-direction: column;">
+            <span>
+                Send us a message on <a href="https://facebook.com/" target="_blank">Facebook</a>
+            </span>
+
+            <img src="./assets/contact.jpg" alt="phone image" style="width: 500px; margin: 10px;">
+        </section>
+        <section>
+             <form style="display: flex; flex-direction: column; align-items: start; justify-content: start; padding: 8px;">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                
+                <div>
+                    <label for="subject">Subject</label>
+                    <input type="password" id="subject">
+                </div>
+                
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Write your message here..."></textarea>
+
+                <button>Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
