@@ -3,47 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Velocity Legends | Contact</title>
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
     <header>
-        <nav style="background-color: darkslategray; padding: 30; display: flex; align-items: center; justify-content: start; border-radius: 20px;">
-            <ul style="list-style: none; display: flex; flex-direction: row; gap: 30px;">
-                <li><a href="./index.html" style="text-decoration: none; color: aliceblue;">Home</a></li>
+        <nav class="navbar">
+            <div class="brand">
+                <div class="brand-badge">VL</div>
+                <span>Velocity Legends</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a class="active" href="./contact.html">Contact</a></li>
+                <li><a href="./login.html">Login</a></li>
             </ul>
+            <div class="nav-actions">
+                <select name="lang" id="lang-selector">
+                    <option value="fr">Francais</option>
+                    <option value="en" selected>English</option>
+                </select>
+            </div>
         </nav>
     </header>
     <main>
-        <section>
-            <h1 style="color: red; text-decoration: underline;">Contact Page</h1>
-            <h2>Reach out for us if you have any questions.</h2>
+        <section class="section-card">
+            <div class="section-title">
+                <h2>Contact the Crew</h2>
+                <span class="muted">Questions, collabs, or builds? Send a message.</span>
+            </div>
+            <div class="hero">
+                <div style="font-size: x-large;">
+                    <p class="muted">
+                        Reach out for tuning advice, build recommendations, or to feature your vintage racer.
+                    </p>
+                    <p class="muted mt-12">
+                        Send us a message on <a href="https://facebook.com/" target="_blank">Facebook</a>
+                    </p>
+                </div>
+                <img src="./assets/contact.jpg" alt="Contact Image" style="width: 35%;">
+            </div>
         </section>
-        <section style="display: flex; flex-direction: column;">
-            <span>
-                Send us a message on <a href="https://facebook.com/" target="_blank">Facebook</a>
-            </span>
-
-            <img src="./assets/contact.jpg" alt="phone image" style="width: 500px; margin: 10px;">
-        </section>
-        <section>
-             <form style="display: flex; flex-direction: column; align-items: start; justify-content: start; padding: 8px;">
+        <section class="section-card">
+            <div class="section-title">
+                <h2>Message Form</h2>
+                <span class="muted">We reply within 24 hours.</span>
+            </div>
+            <form class="form-grid">
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" placeholder="driver@velocity.com" required>
                 </div>
-                
+
                 <div>
                     <label for="subject">Subject</label>
-                    <input type="password" id="subject">
+                    <input type="text" id="subject" placeholder="Project request" required>
                 </div>
-                
 
-                <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Write your message here..."></textarea>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Write your message here..."></textarea>
+                </div>
 
-                <button>Submit</button>
+                <button class="btn btn-primary" type="submit">Submit</button>
             </form>
         </section>
     </main>
+    <footer>
+        <div class="footer-card">Need faster replies? DM us on socials.</div>
+    </footer>
 </body>
 </html>

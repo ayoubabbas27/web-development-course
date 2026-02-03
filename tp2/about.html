@@ -3,26 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Velocity Legends | About</title>
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
     <header>
-        <nav style="background-color: darkslategray; padding: 30; display: flex; align-items: center; justify-content: start; border-radius: 20px;">
-            <ul style="list-style: none; display: flex; flex-direction: row; gap: 30px;">
-                <li><a href="./index.html" style="text-decoration: none; color: aliceblue;">Home</a></li>
+        <nav class="navbar">
+            <div class="brand">
+                <div class="brand-badge">VL</div>
+                <span>Velocity Legends</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a class="active" href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./login.html">Login</a></li>
             </ul>
+            <div class="nav-actions">
+                <select name="lang" id="lang-selector">
+                    <option value="fr">Francais</option>
+                    <option value="en" selected>English</option>
+                </select>
+            </div>
         </nav>
     </header>
     <main>
-        <section>
-            <h1 style="color: red; text-decoration: underline;">About page</h1>
-            <h2>Know more about us here.</h2>
+        <section class="section-card">
+            <div class="section-title">
+                <h2>About the Crew</h2>
+                <span class="muted">Our story begins in the midnight streets.</span>
+            </div>
+            <p class="muted">
+                Velocity Legends is a tribute to vintage racing culture and the craftsmanship behind
+                classic street machines. We restore, tune, and document every build with cinematic detail.
+            </p>
+            <div class="stats mt-20">
+                <div class="stat">
+                    <span>28</span>
+                    <p class="muted">Classic Builds</p>
+                </div>
+                <div class="stat">
+                    <span>14</span>
+                    <p class="muted">Street Legends</p>
+                </div>
+                <div class="stat">
+                    <span>120+</span>
+                    <p class="muted">Late-Night Runs</p>
+                </div>
+            </div>
         </section>
-        <section style="display: flex; flex-direction: column;">
-            <a href="https://news.artnet.com/" target="_blank">Keep in touch with the latest art news</a>
-
-            <img src="./assets/team.jpg" alt="Our team" style="width: 500px; margin: 10px;">
+        <section class="section-card">
+            <div class="section-title">
+                <h2>Team Spotlight</h2>
+                <span class="muted">Swap with your crew photo.</span>
+            </div>
+            <div class="hero">
+                <div>
+                    <p class="muted" style="font-size: larger;">
+                        From engine rebuilds to paint detailing, our crew blends old-school technique with
+                        modern performance. We celebrate the roar, the chrome, and the chase.
+                    </p>
+                    <p class="mt-12">
+                        <a href="https://news.artnet.com/" target="_blank">Keep in touch with the latest art news</a>
+                    </p>
+                </div>
+                <img src="./assets/team.jpg" alt="Team Photo" style="width: 35%;">
+            </div>
         </section>
     </main>
+    <footer>
+        <div class="footer-card">Built for the love of speed &mdash; 2026</div>
+    </footer>
 </body>
 </html>

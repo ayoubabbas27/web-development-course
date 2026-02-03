@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Velocity Legends | Login</title>
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
-    <form>
-        <span>Login form</span>
-        <label for="email">Email</label>
-        <input type="email" id="email">
-
-        <label for="password">Password</label>
-        <input type="password" id="password">
-
-        <button>Submit</button>
-    </form>
+    <div class="login-wrapper">
+        <form class="login-card">
+            <h1>Driver Login</h1>
+            <p class="muted">Access your garage, save builds, and book sessions.</p>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="driver@velocity.com" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="********" required>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>

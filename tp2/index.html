@@ -3,44 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Velocity Legends | Home</title>
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
     <header>
-        <nav style="background-color: darkslategray; padding: 30; display: flex; align-items: center; justify-content: start; border-radius: 20px;">
-            <ul style="list-style: none; display: flex; flex-direction: row; gap: 30px;">
-                <li><a href="./about.html" style="text-decoration: none; color: aliceblue;">About</a></li>
-                <li><a href="./contact.html" style="text-decoration: none; color: aliceblue;">Contact</a></li>
-                <li>
-                    <select name="lang" id="lang-slector">
-                        <option value="fr">Francais</option>
-                        <option value="en">English</option>
-                    </select>
-                </li>
+        <nav class="navbar">
+            <div class="brand">
+                <div class="brand-badge">VL</div>
+                <span>Velocity Legends</span>
+            </div>
+            <ul class="nav-links">
+                <li><a class="active" href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./login.html">Login</a></li>
             </ul>
+            <div class="nav-actions">
+                <select name="lang" id="lang-selector">
+                    <option value="fr">Francais</option>
+                    <option value="en" selected>English</option>
+                </select>
+            </div>
         </nav>
-        
     </header>
     <main>
-        <section>
-            <h1 style="color: red; text-decoration: underline;">Home Page</h1>
-            <h2>Subtitle 1</h2>
-            <h2>Subtitle 2</h2>
+        <section class="hero">
+            <div>
+                <span class="badge">Vintage Racing Culture</span>
+                <h1>Classic street racers, reborn for a new era.</h1>
+                <p>
+                    Welcome to a tribute to vintage racing legends and cinematic street machines. Explore
+                    the garage, meet the crew, and discover the stories behind every iconic build.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary">Explore the Garage</button>
+                    <button class="btn btn-ghost">Meet the Crew</button>
+                </div>
+            </div>
+            <img src="./assets/hero_image.jpg" alt="Hero Image" class="" style="width: 800px;">
         </section>
-        <section>
-            <p>Art Gallery</p>
-            <section style="display: flex; flex-direction: column;">
-            
-
-                <img src="./assets/sunset.jpg" alt="sunset image" style="width: 500px; margin: 10px;">
-                <img src="./assets/jump.jpg" alt="a person juming" style="width: 500px; margin: 10px;">
-                <img src="./assets/bird.jpg" alt="a bird" style="width: 500px; margin: 10px;">
-            </section>
+        <section class="section-card">
+            <div class="section-title">
+                <h2>Garage Highlights</h2>
+                <span class="muted">Signature builds inspired by vintage street racing.</span>
+            </div>
+            <div class="grid grid-3">
+                <article class="card">
+                    <img src="./assets/midnight_charger.jpg" alt="Midnight Charger" style="width: 100%;">
+                    <h3>1970 "Midnight Charger"</h3>
+                    <p class="muted">Steel body, twin-turbo nostalgia, and a roar you can feel.</p>
+                    
+                </article>
+                <article class="card">
+                    <img src="./assets/street_king.jpg" alt="Street King" style="width: 100%;">
+                    <h3>1969 "Street King"</h3>
+                    <p class="muted">Wide stance, polished chrome, and late-night drag energy.</p>
+                </article>
+                <article class="card">
+                    <img src="./assets/neon_runner.jpg" alt="Neon Runner" style="width: 100%;">
+                    <h3>1984 "Neon Runner"</h3>
+                    <p class="muted">Turbocharged classic with a soundtrack of turbo flutter.</p>
+                </article>
+            </div>
         </section>
-        
     </main>
-    <footer style="background-color: darkslategray; color: aliceblue; padding: 30; display: flex; align-items: center; justify-content: center; border-radius: 20px;">
-        <p style="font-weight: bold;">&copy; 2026 Website</p>
+    <footer>
+        <div class="footer-card">&copy; 2026 Velocity Legends. All rights reserved.</div>
     </footer>
 </body>
 </html>
