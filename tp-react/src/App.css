@@ -1,0 +1,169 @@
+.App {
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  text-align: center;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.header .subtitle {
+  font-size: 1.1rem;
+  margin: 10px 0 0 0;
+  opacity: 0.9;
+}
+
+.main-container {
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.task-input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.add-button {
+  padding: 12px 25px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filter-panel {
+  margin-bottom: 25px;
+}
+
+.filter-label {
+  margin: 0 0 12px 0;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  padding: 8px 16px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  color: #666;
+}
+
+.filter-button:hover {
+  border-color: blue;
+}
+
+.filter-button.active {
+  background: blue;
+  color: white;
+  border-color: blue;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+  border: 1px solid gray;
+}
+
+.task-item:hover {
+  background: #f0f0f0;
+}
+
+.task-item.completed {
+  opacity: 0.7;
+  background: #f0f5ff;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: blue;
+}
+
+.task-text {
+  color: #333;
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete-button {
+  padding: 6px 12px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.empty-list {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+}
+
+.empty-list p {
+  font-size: 1.1rem;
+  margin: 0;
+}
